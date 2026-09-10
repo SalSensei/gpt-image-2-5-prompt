@@ -1,5 +1,7 @@
 # GPT Image 2.5 Prompt Art Director
 
+**English** | [简体中文](README.zh-CN.md)
+
 Turn an image idea into a clear, detailed prompt for GPT Image 2.5.
 
 This Codex skill helps you decide what the image should communicate, work through important visual choices, and write a complete prompt you can use in your image-generation workflow. It discusses the work in Chinese and writes the final prompt in English.
@@ -90,18 +92,5 @@ A better prompt improves the instructions; it cannot guarantee a perfect image. 
 The skill tries to check the [official GPT Image 2.5 guide](https://developers.openai.com/api/docs/guides/image-prompting#gpt-image-2.5-guide) at the start of each new creative task. If it cannot access the page, it says so and uses its dated reference. If it cannot run the validator, it reports the count as unverified rather than inventing a number.
 
 Initial validation covered the skill structure, 13 automated validator tests, and author-led example walkthroughs. It did not include image-generation quality testing.
-
-## For maintainers
-
-The main instructions are in [SKILL.md](SKILL.md). Supporting references are loaded as needed, so a task does not have to use every subject or medium module.
-
-From the repository directory, run:
-
-```bash
-python3 -B -m unittest discover -s tests -v
-python3 scripts/validate_prompt.py --json prompt.txt
-```
-
-`prompt.txt` should contain only the final prompt body. The validator counts Unicode code points, including spaces and newlines. It reads the file without changing it.
 
 This is an independently created skill, not an official OpenAI product.
