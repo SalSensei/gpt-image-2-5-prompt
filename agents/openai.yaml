@@ -1,0 +1,6 @@
+interface:
+  display_name: "GPT Image 2.5 Prompt Art Director"
+  short_description: "Art direction and precise English image prompts"
+  default_prompt: "Use $gpt-image-2-5-prompt to discuss my image idea in Chinese and craft a precise English prompt."
+policy:
+  allow_implicit_invocation: true
